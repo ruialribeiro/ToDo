@@ -1,0 +1,33 @@
+div.top
+div.container
+    div.content
+        h4.center-align ToDo list
+        div
+            a(href="/todo/add") New
+        div
+            table.bordered
+                thead
+                    tr
+                        th
+                            label Id
+                        th     
+                            label Title
+                        th  
+                            label Note
+                        th    
+                tbody
+                    tr(ng-repeat="todo in todos")
+                        td
+                            label {{todo.id}}
+                        td     
+                            label {{todo.title}}
+                        td  
+                            label {{todo.note}}
+                        td    
+                            span
+                                a(href='/todo/{{todo.id}}/edit' title='Edit')
+                                      img(src='/img/edit.gif')        
+                            span
+                                a(href='/todo/{{todo.id}}/delete' title='Delete')
+                                      img(src='/img/delete.gif')
+div.footer

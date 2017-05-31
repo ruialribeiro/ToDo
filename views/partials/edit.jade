@@ -1,0 +1,11 @@
+div.top    
+div.container
+    div.content
+        h4 Edit
+        label(for='title') Title: 
+        input(ng-model='form.title', name='title')
+        label(for='note') Note: 
+        input(ng-model='form.note', name='note')
+        button(ng-click='edit()') Save
+        button(ng-click='cancel()') Cancel
+div.footer

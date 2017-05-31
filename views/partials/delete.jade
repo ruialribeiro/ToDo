@@ -1,0 +1,12 @@
+div.top
+div.container
+    div.content
+        h4 Delete
+        label(for='title') Title: 
+        input(ng-model='form.title', name='title', readonly='true')
+        label(for='note') Note: 
+        input(ng-model='form.note', name='note', readonly='true')
+        button(ng-click='delete()') Yes
+        button(ng-click='cancel()') Cancel
+div.footer
+  
